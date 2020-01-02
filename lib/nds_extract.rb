@@ -47,8 +47,10 @@ def total_gross(source)
   row_index = 0 
   while row_index < source.size do 
     
+    total_gross += x
     row_index += 1 
   end
+  total_gross
 end
 
 
