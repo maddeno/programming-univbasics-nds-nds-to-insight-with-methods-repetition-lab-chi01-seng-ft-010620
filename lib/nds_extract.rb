@@ -54,8 +54,9 @@ def total_gross(source)
     d_t_index = 0 
     while d_t_index < directors_totals.size do 
       total_gross += directors_totals[key]
+      d_t_index += 1
     end
-    index += 1 
+    l_o_d_index += 1 
   end
   total_gross
 end
