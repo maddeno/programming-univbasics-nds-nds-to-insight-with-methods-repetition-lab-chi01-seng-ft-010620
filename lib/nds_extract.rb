@@ -50,10 +50,10 @@ def total_gross(source)
   total_gross = 0 
   l_o_d_index = 0 
   while l_o_d_index < list_of_directors.length do 
-    name = list_of_directors[l_o_d_index]
+    :key = list_of_directors[l_o_d_index]
     d_t_index = 0 
     while d_t_index < directors_totals.size do 
-      total_gross += directors_totals[name]
+      total_gross += directors_totals[:key]
     end
     index += 1 
   end
