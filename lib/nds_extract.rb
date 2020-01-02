@@ -49,7 +49,7 @@ def total_gross(source)
     total_gross += directors_totals(row_index)
     row_index += 1 
   end
-  list_of_directors
+  list_of_directors(source)
   total_gross
 end
 
