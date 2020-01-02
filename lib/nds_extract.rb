@@ -45,12 +45,11 @@ def total_gross(source)
   # return the total
   
   
-  directors = list_of_directors(source)
-  hash = directors_totals(directors)
+  directors_totals = directors_totals(source)
   total_gross = 0 
   row_index = 0 
-  while row_index < hash.size do 
-    total_gross += hash[row_index][:gross_for_director]
+  while row_index < directors_totals.size do 
+    puts directors_totals
     row_index += 1 
   end
   total_gross
