@@ -45,15 +45,15 @@ def total_gross(source)
   # return the total
   
   
-  directors_totals = directors_totals(source)
   list_of_directors = list_of_directors(source)
   total_gross = 0 
   l_o_d_index = 0 
   while l_o_d_index < list_of_directors.length do 
-    key = :list_of_directors[l_o_d_index]
+    name = list_of_directors[l_o_d_index]
+    directors_totals = directors_totals(source)
     d_t_index = 0 
     while d_t_index < directors_totals.size do 
-      total_gross += directors_totals[key]
+      total_gross += directors_totals[name]
       d_t_index += 1
     end
     l_o_d_index += 1 
